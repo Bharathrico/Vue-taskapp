@@ -1,15 +1,16 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <newcomp/>
+  <extracomp/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import newcomp from './components/newcomp.vue'
+import extracomp from './components/extracomp.vue'
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    newcomp,
+    extracomp
   }
 }
 </script>
@@ -20,7 +21,17 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  background-color: #09163E;
+  margin:0;
+  display: flex;
+  align-items: center;
+  justify-self: center;
+}
+body
+{
+  margin: 0;
+  padding: 0;
+  background-color: #09163E;
+  overflow: hidden;
 }
 </style>
